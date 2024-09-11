@@ -1,0 +1,116 @@
+<!--Calculator prototype
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="calculation +=1;
+    console.log(calculation);">1</button>
+    <button onclick="calculation +=2;
+    console.log(calculation);">2</button>
+    <button onclick="calculation +=3;
+    console.log(calculation);">3</button>
+    <button onclick="calculation += ' + ';
+    console.log(calculation);">+</button>
+    <button onclick="calculation= eval(calculation);
+    console.log(calculation)">=</button>
+    <script>
+        let calculation='';
+    </script>
+</body>
+</html>
+-->
+
+<!-- Adding to a cart
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <p>Your Cart</p>
+        <button onclick="console.log(`Cart Quantity: ${cartQuantity}`);
+        ;">Cart Quantity</button>
+        <button onclick=" cartQuantity++;
+            console.log(`Cart Quantity: ${cartQuantity}`);">Add to Cart</button>
+        <button onclick=" cartQuantity += 2;
+            console.log(`Cart Quantity: ${cartQuantity}`);">+2</button>
+        <button onclick=" cartQuantity += 3;
+            console.log(`Cart Quantity: ${cartQuantity}`);">+3</button>
+        <button onclick=" cartQuantity --;
+            console.log(`Cart Quantity: ${cartQuantity}`);">Remove from Cart</button>
+        <button onclick=" cartQuantity -=2;
+            console.log(`Cart Quantity: ${cartQuantity}`);">-2</button>
+        <button onclick=" cartQuantity -=3;
+            console.log(`Cart Quantity: ${cartQuantity}`);">-3</button>
+        <button onclick=" cartQuantity *= 0;
+            console.log(`Cart Quantity: ${cartQuantity}`);">Clear Cart</button>
+     <script>
+        let cartQuantity=0;
+     </script>
+</body>
+</html>
+-->
+
+<!-- Practice One: Making a Cart
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <p>Cart Quantity</p>
+        <button onclick="
+        console.log(`Cart Quantity: ${cartQuantity}`);
+        ">
+            Show Quantity</button>
+        <button onclick=" console.log(`Cart Quantity: ${cartQuantity+1}`);
+        ">
+            Add to Cart </button>
+        <button onclick="console.log(`Cart Quantity: ${cartQuantity+2}`);
+        ">
+            +2 </button>
+        <button onclick="console.log(`Cart Quantity: ${cartQuantity+3}`);
+        ">
+            +3</button>
+        <button onclick="console.log(`Cart was reset.\nCart Quantity: ${cartQuantity-cartQuantity}`);
+        ">
+            Clear Items </button>
+    <script>
+        let cartQuantity =0;
+
+    </script>
+</body>
+</html>
+-->
+
+<!--Practice 2: Simple maths
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        const coffee =5;
+        const bagel= 3;
+        const soup= 9;
+        const cost= coffee + bagel+ soup;
+        const tax= (0.1*cost);
+        console.log(`Total bill: $${cost}`);
+        console.log('Tax amount: '+tax);
+        console.log(`Total bill incl. tax: $${cost+tax}`);
+    </script>
+</body>
+</html>
+-->
+

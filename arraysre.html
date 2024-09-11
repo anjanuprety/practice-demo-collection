@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>To Do list</p>
+  <input type="text" class="js-name-input" placeholder="todo name">
+  <button onclick="
+    addTodo();
+      ">Add</button>
+
+
+<script>
+
+  const toDoList=['a','b'];
+
+  let toDoListHTML=''
+  for(let i=0; i<toDoList; i++){
+    const todo=toDoList[i];
+    const html=`<p>${todo}</p>`
+  }
+
+  function addTodo(){
+    //fetching the input into script
+    const inputElement= document.querySelector('.js-name-input');
+
+    //storing the input value as name
+    const name= inputElement.value;
+    //inserting the input element into the array
+    toDoList.push(name);
+    console.log(toDoList);
+    
+    inputElement.value=''
+
+  }
+
+</script>
+</body>
+</html>
